@@ -14,9 +14,9 @@ public class cardGame {
 		String resposta = "";
 		Scanner respJogador = new Scanner(System.in);
 		
-		while(!resposta.contentEquals("S")) 
+		while(!resposta.equalsIgnoreCase("S")) 
 		{
-		while(!respDoJogador.contentEquals("Sim"))
+		while(!respDoJogador.equalsIgnoreCase("Sim"))
 		{
 			System.out.println("Bem-vindo ao Jogo das Cartas!");
 			System.out.println("Você será o Jogador 1, Escreva Sim para continuar");
@@ -76,7 +76,7 @@ public class cardGame {
 				System.out.print("  Seus Pontos:" + pontosUserJ1+"   ");
 				System.out.println("  Pontos da máquina:" + pontosMaquinaJ2);
 				System.out.println("");
-				while(!respostaJogo.contentEquals("C")) {
+				while(!respostaJogo.equalsIgnoreCase("C")) {
 					System.out.print("Escreva C para continuar: ");
 					respostaJogo = respostaGeral.nextLine();
 				}
@@ -101,7 +101,7 @@ public class cardGame {
 			
 			System.out.println("Escreva S para sair ou qualquer tecla para continuar: ");
 			resposta = respostaGeral.nextLine();
-			if(resposta.contentEquals("S"))
+			if(resposta.equalsIgnoreCase("S"))
 			{
 				System.out.println("Jogo Finalizado, obrigado por jogar!");
 				System.exit(0);
