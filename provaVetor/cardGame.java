@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-public class vetorSorter {
+public class cardGame {
 
 	public static void main(String[] args) {
 		
